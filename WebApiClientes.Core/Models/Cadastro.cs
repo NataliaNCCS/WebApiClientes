@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace WebApiClientes
+namespace WebApiClientes.Core.Models
 {
     public class Cadastro
     {
