@@ -15,7 +15,7 @@ namespace WebApiClientes.Filters
             _clienteService = clienteService;
         }
 
-        override public void OnActionExecuting(ActionExecutingContext context)
+        public override void OnActionExecuting(ActionExecutingContext context)
         {
             Cadastro cadastro = (Cadastro)context.ActionArguments["cadastro"];
             

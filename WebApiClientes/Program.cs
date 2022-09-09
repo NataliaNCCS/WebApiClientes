@@ -20,6 +20,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddMvc(options =>
 {
     options.Filters.Add<LogResultFilter>();
+    options.Filters.Add<GeneralExceptionFilter>();
 }
 );
 
@@ -27,7 +28,6 @@ builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IClienteRepository, ClienteRepository>();
 builder.Services.AddScoped<InsertFilter>();
 builder.Services.AddScoped<UpdateFilter>();
-builder.Services.AddScoped<ITimerService, TimerService>();
 
 var app = builder.Build();
 

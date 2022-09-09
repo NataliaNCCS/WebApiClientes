@@ -10,7 +10,6 @@ namespace WebApiClientes.Controllers
     [Consumes("application/json")]
     [Produces("application/json")]
     [TypeFilter(typeof(LogResourceFilter))]
-    [TypeFilter(typeof(TimerResourceFilter))]
 
     public class CadastroController : ControllerBase
     {
